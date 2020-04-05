@@ -26,7 +26,12 @@ class Main extends Component {
     render() {
         return <div>
             <Title />
-            <List />   
+            <List /> 
+            <List /> 
+            <List /> 
+            <List /> 
+            <List /> 
+              
         </div>
     }
     }
