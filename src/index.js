@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 
 
 
-const tasks = ['Rosie', 'and', 'Jim'];
-
-const element = React.createElement('ol', null, tasks.map((task, index) => React.createElement('li', { key: index }, task)))
-
+const element = <ol><li> Rosie and Jim</li> <li> Bodger and Badger</li> <li>Tom and Jerry</li> </ol>
 
 ReactDOM.render(element, document.getElementById('root'));
