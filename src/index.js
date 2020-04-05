@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = React.createElement('h2', null, 'Hello sunshine :)');
+// nested elements
+const element = React.createElement('ol', null, React.createElement('li', null, 'rosie'),
+React.createElement('li', null, 'and'),
+React.createElement('li', null, 'Jim')
+);
 
 ReactDOM.render(element, document.getElementById('root'));
