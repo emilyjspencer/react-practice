@@ -16,7 +16,7 @@ class List extends Component {
 class Title extends Component {
     render() {
        return(
-        <h1>Babar the Elephant's family</h1>
+        <h1>{this.props.title}</h1>
        ) 
     }}
 
@@ -24,7 +24,7 @@ class Main extends Component {
 
     render() {
         return <div>
-            <Title />
+            <Title title={'Babar the Elephant characters'} />
             <List characters={['Arthur']}/> 
             <List characters={[' Lady Rataxes', 'Lady Rataxes', 'Victor']} /> 
              
@@ -37,7 +37,7 @@ ReactDOM.render(<Main/>, document.getElementById('root'));
 
 
 // outputs:
-//Babar the Elephant's family
+//Babar the Elephant characters
 
 //1. Arthur
 
