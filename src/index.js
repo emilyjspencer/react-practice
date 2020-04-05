@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// nested elements
-const element = React.createElement('ol', null, React.createElement('li', null, 'rosie'),
-React.createElement('li', null, 'and'),
-React.createElement('li', null, 'Jim')
-);
+
+
+const tasks = ['Rosie', 'and', 'Jim'];
+
+const element = React.createElement('ol', null, tasks.map((task) => React.createElement('li', null, task)))
+
 
 ReactDOM.render(element, document.getElementById('root'));
