@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 
-const babarCharacters = ['Babar', 'Celeste', 'Flora', 'Pomme', 'Alexander', 'Isabel' ]
 
 
 class List extends Component {
     render() {
        return  <ol>
-    { babarCharacters.map((character, index) => <li key={index}> {character} </li>)}
+    { this.props.characters.map((character, index) => <li key={index}> {character} </li>)}
    </ol>
     }
   
@@ -26,14 +25,22 @@ class Main extends Component {
     render() {
         return <div>
             <Title />
-            <List /> 
-            <List /> 
-            <List /> 
-            <List /> 
-            <List /> 
-              
+            <List characters={['Arthur']}/> 
+            <List characters={[' Lady Rataxes', 'Lady Rataxes', 'Victor']} /> 
+             
+
         </div>
     }
     }
 
 ReactDOM.render(<Main/>, document.getElementById('root'));
+
+
+// outputs:
+//Babar the Elephant's family
+
+//1. Arthur
+
+//1. Lady Rataxes
+//2. Lady Rataxes
+//3. Victor
