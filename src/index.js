@@ -1,16 +1,34 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 
 const babarCharacters = ['Babar', 'Celeste', 'Flora', 'Pomme', 'Alexander', 'Isabel' ]
 
 
-const element = 
-    <div>
-      <h1>Babar the Elephant's family</h1>
-    <ol>
+class List extends Component {
+    render() {
+       return  <ol>
     { babarCharacters.map((character, index) => <li key={index}> {character} </li>)}
    </ol>
-   </div>
+    }
+  
+}
 
-ReactDOM.render(element, document.getElementById('root'));
+class Title extends Component {
+    render() {
+       return(
+        <h1>Babar the Elephant's family</h1>
+       ) 
+    }}
+
+class Main extends Component {
+
+    render() {
+        return <div>
+            <Title />
+            <List />   
+        </div>
+    }
+    }
+
+ReactDOM.render(<Main/>, document.getElementById('root'));
