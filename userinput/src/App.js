@@ -5,9 +5,9 @@ import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
   state = {  
-    username1: "Friend1",
-    username2: "Friend2",
-    username3: "Friend3"
+    username: "Bonnie E",
+    username: "Bonnie M",
+    username: "Bonnie S"
   }
 
   changeUsernamesHandler = (event) => {
@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
     <div className="App">
-      <UserInput changed={this.changeUsernamesHandler} />
+      <UserInput changed={this.changeUsernamesHandler} currentName = {this.state.username} />
       <UserOutput username={this.state.username} />
       <UserOutput username={this.state.username} />
       <UserOutput username={this.state.username} />
