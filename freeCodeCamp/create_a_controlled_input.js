@@ -1,4 +1,4 @@
-// Create a Controller Input 
+// Create a Controlled Input 
 
 class ControlledInput extends React.Component {
     constructor(props) {
@@ -35,6 +35,6 @@ class ControlledInput extends React.Component {
   // By default, the value of input is nothing
   // We have an input element which has an event handler - onChange
   // which is assigned a pointer to the handleChange method.
-  // The handlerChange method takes an event as a param and uses React's 
+  // The handleChange method takes an event as a param and uses React's 
   // setState() method to update the state from nothing to the value that the user
-  // enters in the form
+  // enters in the input box 
