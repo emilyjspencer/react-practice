@@ -51,7 +51,7 @@ class Results extends React.Component {
   };
 
 // We have a parent component called GameOfChance and a child component called Results
-// The Play Again button has a click button with a reference to the handleClick which increases
+// The Play Again button has a click handler with a reference to the handleClick which increases
 // the counter by 1 each time it is clicked
 // The Results (child component) outputs as an h1 whether you win or lose - You Win! or You Lose!
 // Whether you win or lose is determined by the expression whose value is generated randomly using Math.random(), more
